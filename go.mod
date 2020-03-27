@@ -1,4 +1,4 @@
-module gf-web
+module github.com/chenyingdi/gf-web
 
 go 1.13
 
