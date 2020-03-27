@@ -16,10 +16,10 @@ func (res *Response) JSON(r *ghttp.Request) error {
 }
 
 // 操作成功
-func (res *Response) Success(r *ghttp.Request)  {
+func (res *Response) Success(r *ghttp.Request, data interface{})  {
 	res.Code = http.StatusOK
 	res.Msg = "操作成功！"
-	res.Data = nil
+	res.Data = data
 
 	_ = res.JSON(r)
 }
